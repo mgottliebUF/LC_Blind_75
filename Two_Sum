@@ -20,4 +20,16 @@ for i in range(len(nums)-1):
       return ([i, j])
 
 #Optimal Solution: 
+#Using a seen dictionary to store numbers, only have to loop once
+
+seen = {}
+#use enumerate for index and value for loop 
+for i, num in enumerate(nums): 
+  if target - num in seen: 
+    return([seen[target-num], i])
+#edge case 
+  elif num not in seen
+    seen[num] = i 
+
+
 
